@@ -13,6 +13,13 @@ int main(int argc, char *argv[])
     Hello hi;
     hi.print();
     hi.startPool(foo, 10);
+
+    hi.startPool([](int i)->void
+    {
+        std::cout << i << '\n';
+    }, 55);
+
+    
     return 0;
 }
 
