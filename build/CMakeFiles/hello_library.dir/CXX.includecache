@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/haost/Рабочий стол/pool_lib/include/static/pool.h
+
+/home/haost/Рабочий стол/pool_lib/lib/pool.cpp
+iostream
+-
+../include/static/pool.h
+/home/haost/Рабочий стол/pool_lib/include/static/pool.h
+

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhello_library.a CMakeFiles/hello_library.dir/lib/pool.cpp.o
+/usr/bin/ranlib libhello_library.a
