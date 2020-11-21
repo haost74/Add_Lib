@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/haost/Рабочий стол/pool_lib/include"
+CXX_INCLUDES = -I"/home/haost/Рабочий стол/lib/Add_lib/include"
 
 CXX_FLAGS = -std=c++17
 

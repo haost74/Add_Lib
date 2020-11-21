@@ -8,11 +8,9 @@
 
 /home/haost/Рабочий стол/lib/Add_lib/include/static/pool.h
 
-/home/haost/Рабочий стол/lib/Add_lib/lib/pool.cpp
-iostream
--
-thread
--
+/home/haost/Рабочий стол/lib/Add_lib/src/main.cpp
 ../include/static/pool.h
 /home/haost/Рабочий стол/lib/Add_lib/include/static/pool.h
+iostream
+-
 

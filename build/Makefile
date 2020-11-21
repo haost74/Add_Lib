@@ -67,10 +67,10 @@ RM = /snap/cmake/703/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/haost/Рабочий стол/pool_lib"
+CMAKE_SOURCE_DIR = "/home/haost/Рабочий стол/lib/Add_lib"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/haost/Рабочий стол/pool_lib/build"
+CMAKE_BINARY_DIR = "/home/haost/Рабочий стол/lib/Add_lib/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/haost/Рабочий стол/pool_lib/build/CMakeFiles" "/home/haost/Рабочий стол/pool_lib/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/haost/Рабочий стол/lib/Add_lib/build/CMakeFiles" "/home/haost/Рабочий стол/lib/Add_lib/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/haost/Рабочий стол/pool_lib/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/haost/Рабочий стол/lib/Add_lib/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -143,17 +143,17 @@ hello_library/fast:
 .PHONY : hello_library/fast
 
 #=============================================================================
-# Target rules for targets named hello_binary
+# Target rules for targets named app
 
 # Build rule for target.
-hello_binary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_binary
-.PHONY : hello_binary
+app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app
+.PHONY : app
 
 # fast build rule for target.
-hello_binary/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_binary.dir/build.make CMakeFiles/hello_binary.dir/build
-.PHONY : hello_binary/fast
+app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
+.PHONY : app/fast
 
 lib/pool.o: lib/pool.cpp.o
 
@@ -188,7 +188,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_binary.dir/build.make CMakeFiles/hello_binary.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -197,7 +197,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_binary.dir/build.make CMakeFiles/hello_binary.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -206,7 +206,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_binary.dir/build.make CMakeFiles/hello_binary.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -217,7 +217,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... hello_binary"
+	@echo "... app"
 	@echo "... hello_library"
 	@echo "... lib/pool.o"
 	@echo "... lib/pool.i"

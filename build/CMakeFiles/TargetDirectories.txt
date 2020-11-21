@@ -1,4 +1,4 @@
-/home/haost/Рабочий стол/pool_lib/build/CMakeFiles/rebuild_cache.dir
-/home/haost/Рабочий стол/pool_lib/build/CMakeFiles/edit_cache.dir
-/home/haost/Рабочий стол/pool_lib/build/CMakeFiles/hello_library.dir
-/home/haost/Рабочий стол/pool_lib/build/CMakeFiles/hello_binary.dir
+/home/haost/Рабочий стол/lib/Add_lib/build/CMakeFiles/rebuild_cache.dir
+/home/haost/Рабочий стол/lib/Add_lib/build/CMakeFiles/edit_cache.dir
+/home/haost/Рабочий стол/lib/Add_lib/build/CMakeFiles/hello_library.dir
+/home/haost/Рабочий стол/lib/Add_lib/build/CMakeFiles/app.dir

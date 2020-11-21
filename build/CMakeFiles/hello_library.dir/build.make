@@ -62,10 +62,10 @@ RM = /snap/cmake/703/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/haost/Рабочий стол/pool_lib"
+CMAKE_SOURCE_DIR = "/home/haost/Рабочий стол/lib/Add_lib"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/haost/Рабочий стол/pool_lib/build"
+CMAKE_BINARY_DIR = "/home/haost/Рабочий стол/lib/Add_lib/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hello_library.dir/depend.make
@@ -78,16 +78,16 @@ include CMakeFiles/hello_library.dir/flags.make
 
 CMakeFiles/hello_library.dir/lib/pool.cpp.o: CMakeFiles/hello_library.dir/flags.make
 CMakeFiles/hello_library.dir/lib/pool.cpp.o: ../lib/pool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/haost/Рабочий стол/pool_lib/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello_library.dir/lib/pool.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello_library.dir/lib/pool.cpp.o -c "/home/haost/Рабочий стол/pool_lib/lib/pool.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/haost/Рабочий стол/lib/Add_lib/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello_library.dir/lib/pool.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello_library.dir/lib/pool.cpp.o -c "/home/haost/Рабочий стол/lib/Add_lib/lib/pool.cpp"
 
 CMakeFiles/hello_library.dir/lib/pool.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello_library.dir/lib/pool.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/haost/Рабочий стол/pool_lib/lib/pool.cpp" > CMakeFiles/hello_library.dir/lib/pool.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/haost/Рабочий стол/lib/Add_lib/lib/pool.cpp" > CMakeFiles/hello_library.dir/lib/pool.cpp.i
 
 CMakeFiles/hello_library.dir/lib/pool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_library.dir/lib/pool.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/haost/Рабочий стол/pool_lib/lib/pool.cpp" -o CMakeFiles/hello_library.dir/lib/pool.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/haost/Рабочий стол/lib/Add_lib/lib/pool.cpp" -o CMakeFiles/hello_library.dir/lib/pool.cpp.s
 
 # Object files for target hello_library
 hello_library_OBJECTS = \
@@ -99,7 +99,7 @@ hello_library_EXTERNAL_OBJECTS =
 libhello_library.a: CMakeFiles/hello_library.dir/lib/pool.cpp.o
 libhello_library.a: CMakeFiles/hello_library.dir/build.make
 libhello_library.a: CMakeFiles/hello_library.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/haost/Рабочий стол/pool_lib/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libhello_library.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/haost/Рабочий стол/lib/Add_lib/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libhello_library.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/hello_library.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello_library.dir/link.txt --verbose=$(VERBOSE)
 
@@ -113,6 +113,6 @@ CMakeFiles/hello_library.dir/clean:
 .PHONY : CMakeFiles/hello_library.dir/clean
 
 CMakeFiles/hello_library.dir/depend:
-	cd "/home/haost/Рабочий стол/pool_lib/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/haost/Рабочий стол/pool_lib" "/home/haost/Рабочий стол/pool_lib" "/home/haost/Рабочий стол/pool_lib/build" "/home/haost/Рабочий стол/pool_lib/build" "/home/haost/Рабочий стол/pool_lib/build/CMakeFiles/hello_library.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/haost/Рабочий стол/lib/Add_lib/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/haost/Рабочий стол/lib/Add_lib" "/home/haost/Рабочий стол/lib/Add_lib" "/home/haost/Рабочий стол/lib/Add_lib/build" "/home/haost/Рабочий стол/lib/Add_lib/build" "/home/haost/Рабочий стол/lib/Add_lib/build/CMakeFiles/hello_library.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/hello_library.dir/depend
 

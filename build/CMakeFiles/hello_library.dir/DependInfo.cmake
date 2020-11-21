@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/haost/Рабочий стол/pool_lib/lib/pool.cpp" "/home/haost/Рабочий стол/pool_lib/build/CMakeFiles/hello_library.dir/lib/pool.cpp.o"
+  "/home/haost/Рабочий стол/lib/Add_lib/lib/pool.cpp" "/home/haost/Рабочий стол/lib/Add_lib/build/CMakeFiles/hello_library.dir/lib/pool.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

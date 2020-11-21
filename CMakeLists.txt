@@ -33,13 +33,14 @@ SET(CMAKE_CXX_STANDARD 17)
 find_package (Threads)
 
 # Add an executable with the above sources
-add_executable(hello_binary 
+#hello_binary = app
+add_executable(app 
     src/main.cpp
 )
 
 #target_link_libraries (hello_binary Threads::Threads)
 # link the new hello_library target with the hello_binary target
-target_link_libraries(hello_binary
+target_link_libraries(app
     PRIVATE 
         hello_library Threads::Threads
 )
