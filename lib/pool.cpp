@@ -14,3 +14,8 @@ void Hello::startPool(decltype(doo) func, int i)
   std::thread thr{func, i};
   thr.join();
 }
+
+const unsigned Hello::GetCountThread()
+{
+   return std::thread::hardware_concurrency();
+}

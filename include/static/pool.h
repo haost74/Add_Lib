@@ -7,6 +7,7 @@ public:
     void (*doo)(int);
     void print();
     void startPool(decltype(doo) func, int i);
+    const unsigned GetCountThread();
 };
 
 #endif

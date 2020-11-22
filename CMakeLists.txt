@@ -13,6 +13,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 #Generate the static library from the library sources
 add_library(hello_library STATIC 
     lib/pool.cpp
+    lib/task.cpp
 )
 
 target_include_directories(hello_library
