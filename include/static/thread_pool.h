@@ -29,6 +29,14 @@ class thread_pool
           const unsigned int increase_size = 8,
           const unsigned int max_size = 0);
 
+           ~thread_pool();
+
+           void shutdown();
+
+           template <typename CALLABLE, typename... ARGS>
+        auto run(CALLABLE&& fun, ARGS&&... args) noexcept(false)
+        -> std::shared_future<decltype(fun(args...))>;
+
 
       //---------------------------------
 

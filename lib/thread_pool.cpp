@@ -4,8 +4,40 @@
 thread_pool::thread_pool()
  : flag_shut{false}, cv{}, pool{}
 {
-
+  init(16, 8, 0);
 }
+
+
+thread_pool::~thread_pool()
+{
+    
+}
+
+void thread_pool::shutdown()
+{
+     flag_shut = true;
+            cv.notify_all();
+            pool.clear();
+}
+
+template <typename CALLABLE, typename... ARGS>
+        auto run(CALLABLE&& fun, ARGS&&... args) noexcept(false)
+        -> std::shared_future<decltype(fun(args...))>
+        {
+            if (static_cast<unsigned int>(running_count) >= pool_size) {
+                expand();
+            }
+
+            running_count++;
+            using ret_type = decltype(fun(args...));
+            auto tp = std::make_shared<std::packaged_task<ret_type()>>(
+                std::bind(std::forward<CALLABLE>(fun), std::forward<ARGS>(args)...)
+            );
+            auto ft = tp->get_future();
+            fun_que.push([tp](){(*tp)();});
+            cv.notify_one();
+            return ft;
+        }
 
 
  
@@ -80,3 +112,4 @@ thread_pool::thread_pool()
                 pool_size += sz;
             }
         }
+
